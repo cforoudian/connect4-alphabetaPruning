@@ -1,4 +1,4 @@
-Connect 4 AI Player Implementation
+# Connect 4 AI Player Implementation
 
 Overview
 This repository contains an implementation of Connect 4 AI players using minimax and alpha-beta pruning algorithms. The project was developed as part of an AI course at UC Davis, focusing on game-playing algorithms and decision-making strategies.

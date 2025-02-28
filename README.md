@@ -1,18 +1,16 @@
 # Connect 4 AI Player Implementation
 
-Overview
+## Overview
 This repository contains an implementation of Connect 4 AI players using minimax and alpha-beta pruning algorithms. The project was developed as part of an AI course at UC Davis, focusing on game-playing algorithms and decision-making strategies.
 
-Key Features
+## Key Features
 -- Minimax Algorithm: Implementation of the classic minimax algorithm without alpha-beta pruning
 
 -- Alpha-Beta Pruning: Enhanced version with alpha-beta pruning for more efficient search
 
 
-Performance: The alpha-beta implementation consistently outperforms Monte Carlo-based approaches (winning 17 out of 20 games)
 
-
-Optimization Techniques:
+## Optimization Techniques:
 
 -- Move ordering to improve pruning efficiency
 
@@ -23,9 +21,8 @@ Optimization Techniques:
 -- Strategic position evaluation
 
 
-
-Implementation Details
-Minimax AI
+## Implementation Details
+### Minimax AI
 
 -- Conservative depth limit (4) to ensure moves complete within the 3-second time constraint
 
@@ -34,7 +31,7 @@ Minimax AI
 -- Comprehensive position evaluation function (split between evaluate_window and evaluate_position)
 
 
-Alpha-Beta AI
+### Alpha-Beta AI
 The alphaBetaAI class extends the minimax funcitonality with:
 
 -- Alpha-beta pruning to reduce the search space
@@ -48,13 +45,13 @@ The alphaBetaAI class extends the minimax funcitonality with:
 -- Quick terminal state detection
 
 
-How to Run
+## How to Run
 The game can be run using the main.py file with various command-line arguments:
 
-Ex:
+### Ex:
 -- python main.py -p1 alphaBetaAI -p2 monteCarloAI
 
-Command Line Options:
+## Command Line Options:
   -w: Number of rows (default: 6)
   
   -l: Number of columns (default: 7)
@@ -72,7 +69,7 @@ Command Line Options:
   -time_limit: Set time limits for players
 
 
-Player Types Available:
+## Player Types Available:
 -- humanGUI: Human player with GUI interface
 
 -- humanConsole: Human player with console interface
@@ -87,16 +84,16 @@ Player Types Available:
 
 -- alphaBetaAI: Alpha-beta pruning implementation (Produced by Cyrus)
 
-Performance
+## Performance
 The alpha-beta implementation consistently outperforms the Monte Carlo algorithm, winning roughly 17 out of 20 games, with almost every move being made in under 3 seconds on CSIF UC Davis computers.
 This demonstrates the effectiveness and efficiency of the pruning technique and the strategic evaluation functions implemented.
 
-Requirements
+## Requirements
 -- Python 3.x
 
 -- NumPy
 
 -- Pygame (for visualization)
 
-Acknowledgments
+## Acknowledgments
 This project was completed as part of an AI course at UC Davis, focusing on adversarial search algorithms and their application to game playing. The only file edited by me was player.py, specifically the minimaxAI() and alphaBetaAI() functions.
